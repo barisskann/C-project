@@ -11,34 +11,29 @@ namespace DataAccesLayer.Repostories
 {
     internal class BlogRepository : IBlogDal
     {
-        Context c = new Context();
-        public void AddBlog(Blog blog)
+        public List<Blog> Get()
         {
-            c.Add(blog);
-            c.SaveChanges();
-
+            throw new NotImplementedException();
         }
 
-        public void DeleteBlog(Blog blog)
+        public Blog GetAt(int index)
         {
-            c.Remove(blog);
-            c.SaveChanges();
+            throw new NotImplementedException();
         }
 
-        public List<Blog> GetAllBlog()
+        public void Insert(Blog item)
         {
-            return c.Blogs.ToList();
+            throw new NotImplementedException();
         }
 
-        public Blog getById(int id)
+        public void Remove(Blog item)
         {
-            return c.Blogs.Find(id);
+            throw new NotImplementedException();
         }
 
-        public void UpdateBlog(Blog blog)
+        public void Update(Blog item)
         {
-            c.Update(blog);
-            c.SaveChanges();
+            throw new NotImplementedException();
         }
     }
 }

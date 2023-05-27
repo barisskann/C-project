@@ -10,3 +10,15 @@ C:\Users\mali_\source\repos\YoutubeProjet\CoreLayer\obj\Debug\net6.0\CoreLayer.d
 C:\Users\mali_\source\repos\YoutubeProjet\CoreLayer\obj\Debug\net6.0\refint\CoreLayer.dll
 C:\Users\mali_\source\repos\YoutubeProjet\CoreLayer\obj\Debug\net6.0\CoreLayer.pdb
 C:\Users\mali_\source\repos\YoutubeProjet\CoreLayer\obj\Debug\net6.0\ref\CoreLayer.dll
+C:\Users\bars_\Desktop\projem\C-project\CoreLayer\bin\Debug\net6.0\CoreLayer.deps.json
+C:\Users\bars_\Desktop\projem\C-project\CoreLayer\bin\Debug\net6.0\CoreLayer.dll
+C:\Users\bars_\Desktop\projem\C-project\CoreLayer\bin\Debug\net6.0\CoreLayer.pdb
+C:\Users\bars_\Desktop\projem\C-project\CoreLayer\obj\Debug\net6.0\CoreLayer.csproj.AssemblyReference.cache
+C:\Users\bars_\Desktop\projem\C-project\CoreLayer\obj\Debug\net6.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bars_\Desktop\projem\C-project\CoreLayer\obj\Debug\net6.0\CoreLayer.AssemblyInfoInputs.cache
+C:\Users\bars_\Desktop\projem\C-project\CoreLayer\obj\Debug\net6.0\CoreLayer.AssemblyInfo.cs
+C:\Users\bars_\Desktop\projem\C-project\CoreLayer\obj\Debug\net6.0\CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\bars_\Desktop\projem\C-project\CoreLayer\obj\Debug\net6.0\CoreLayer.dll
+C:\Users\bars_\Desktop\projem\C-project\CoreLayer\obj\Debug\net6.0\refint\CoreLayer.dll
+C:\Users\bars_\Desktop\projem\C-project\CoreLayer\obj\Debug\net6.0\CoreLayer.pdb
+C:\Users\bars_\Desktop\projem\C-project\CoreLayer\obj\Debug\net6.0\ref\CoreLayer.dll

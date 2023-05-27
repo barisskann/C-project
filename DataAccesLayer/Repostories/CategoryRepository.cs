@@ -9,36 +9,31 @@ using System.Threading.Tasks;
 
 namespace DataAccesLayer.Repostories
 {
-    public class CategoryRepository : ICategoryDal
+    public class CategoryRepository : IGenericDal<Category>
     {
-        Context c = new Context();
-
-        public void AddCategory(Category category)
+        public List<Category> Get()
         {
-            c.Add(category);
-            c.SaveChanges();
+            throw new NotImplementedException();
         }
 
-        public void DeleteCategory(Category category)
+        public Category GetAt(int index)
         {
-            c.Remove(category);
-            c.SaveChanges();
+            throw new NotImplementedException();
         }
 
-        public Category getById(int id)
+        public void Insert(Category item)
         {
-            return c.Categories.Find(id);
+            throw new NotImplementedException();
         }
 
-        public List<Category> ListAllCategory()
+        public void Remove(Category item)
         {
-            return c.Categories.ToList();
+            throw new NotImplementedException();
         }
 
-        public void UpdateCategory(Category category)
+        public void Update(Category item)
         {
-            c.Update(category);
-            c.SaveChanges();
+            throw new NotImplementedException();
         }
     }
 }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccesLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230526153357_m2")]
-    partial class m2
+    [Migration("20230527114158_m1")]
+    partial class m1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -134,6 +134,9 @@ namespace DataAccesLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentID"));
 
+                    b.Property<int>("BlogID")
+                        .HasColumnType("int");
+
                     b.Property<string>("CommentContent")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -153,6 +156,8 @@ namespace DataAccesLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CommentID");
+
+                    b.HasIndex("BlogID");
 
                     b.ToTable("Comments");
                 });
@@ -231,7 +236,7 @@ namespace DataAccesLayer.Migrations
             modelBuilder.Entity("EntityLayer.Concrete.Blog", b =>
                 {
                     b.HasOne("EntityLayer.Concrete.Category", "Category")
-                        .WithMany("Blogs")
+                        .WithMany("Blog")
                         .HasForeignKey("CategoryID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -239,9 +244,25 @@ namespace DataAccesLayer.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Comment", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.Blog", "Blog")
+                        .WithMany("Comments")
+                        .HasForeignKey("BlogID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Blog");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Blog", b =>
+                {
+                    b.Navigation("Comments");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Category", b =>
                 {
-                    b.Navigation("Blogs");
+                    b.Navigation("Blog");
                 });
 #pragma warning restore 612, 618
         }

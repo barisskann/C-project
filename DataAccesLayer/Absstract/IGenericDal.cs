@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccesLayer.Absstract
 {
-    internal interface IGenericDal<T> where T : class
+    public interface IGenericDal<T> where T : class
     {
         void Insert (T item);
         void Remove (T item);

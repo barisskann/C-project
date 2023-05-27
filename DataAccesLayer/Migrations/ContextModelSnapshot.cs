@@ -233,7 +233,7 @@ namespace DataAccesLayer.Migrations
             modelBuilder.Entity("EntityLayer.Concrete.Blog", b =>
                 {
                     b.HasOne("EntityLayer.Concrete.Category", "Category")
-                        .WithMany("Blogs")
+                        .WithMany("Blog")
                         .HasForeignKey("CategoryID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -259,7 +259,7 @@ namespace DataAccesLayer.Migrations
 
             modelBuilder.Entity("EntityLayer.Concrete.Category", b =>
                 {
-                    b.Navigation("Blogs");
+                    b.Navigation("Blog");
                 });
 #pragma warning restore 612, 618
         }

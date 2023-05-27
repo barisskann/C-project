@@ -11,12 +11,12 @@ namespace DataAccesLayer.Concrete
     public class Context :DbContext
     {
         protected override void  OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            optionsBuilder.UseSqlServer("server=DESKTOP-NEK9GGK\\SQLSERVER;database=CoreBlogDb;Integrated Security=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("server=DESKTOP-1V62EKD\\SQLKODLAB;database=CoreBlogDbs;Integrated Security=True;TrustServerCertificate=True;");
         }
         public DbSet<About> Abouts { get; set; }
+        public DbSet<Category> Categories { get; set; } 
         public DbSet<Blog> Blogs { get; set; }
 
-        public DbSet<Category> Categories { get; set; } 
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Writer> Writers { get; set; }

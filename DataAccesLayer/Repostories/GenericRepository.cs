@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccesLayer.Repostories
 {
-    internal class GenericRepository<T> : IGenericDal<T> where T : class
+    public class GenericRepository<T> : IGenericDal<T> where T : class
     {
         Context c = new Context();
         public List<T> Get()
